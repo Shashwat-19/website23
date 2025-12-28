@@ -21,7 +21,7 @@ const FloatingPandas: React.FC = () => {
         rotate: Math.random() * 360
     }));
 
-    const handlePandaClick = (e: React.MouseEvent, id: number) => {
+    const handlePandaClick = (e: React.MouseEvent) => {
         const x = e.clientX;
         const y = e.clientY;
         const newPopup = { id: Date.now(), x, y, text: "I Love You! ❤️" };
@@ -62,7 +62,7 @@ const FloatingPandas: React.FC = () => {
                             ease: "linear"
                         }}
                         whileHover={{ scale: 1.5, rotate: 0 }}
-                        onClick={(e) => handlePandaClick(e, panda.id)}
+                        onClick={(e) => handlePandaClick(e)}
                     >
                         🐼
                     </motion.div>
