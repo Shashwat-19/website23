@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kawaii-pink: #ffd1dc;
+  --color-kawaii-cream: #fffdd0;
+  --color-kawaii-lilac: #e6e6fa;
+  --color-kawaii-text: #4a4a4a;
+
+  --font-display: "Sniglet", cursive;
+  --font-body: "Quicksand", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-kawaii-cream);
+  color: var(--color-kawaii-text);
+  -webkit-font-smoothing: antialiased;
+}
